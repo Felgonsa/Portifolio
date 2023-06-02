@@ -1,7 +1,9 @@
 html{
     overflow-x: hidden;
 }
-
+*{
+    box-sizing: border-box;
+}
 #name, #fixed, #body, #fixed,#filter{
     transition: 850ms;
 }
@@ -89,7 +91,7 @@ h1{
 }
 
 .carousel-item-img{
-    width: 80%;
+    width: 65%;
     transition: 500ms;
   
 }
@@ -108,12 +110,13 @@ margin-right: 19px;
     #portfolio{
         height: 60vh;
     }
-
-   
-
   
 }
-@media (max-width: 470px){
+@media (max-width: 400px){
+   body{
+    width: 100vw;
+   }
+
     #portfolio{
         height: 40vh;
     }
