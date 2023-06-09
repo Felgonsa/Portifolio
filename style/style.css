@@ -3,6 +3,7 @@ html{
 }
 *{
     box-sizing: border-box;
+    transition: 100ms;
 }
 #name, #fixed, #body, #fixed,#filter{
     transition: 850ms;
@@ -36,6 +37,16 @@ h1{
 
 #presentation{
     margin-top: 8rem;
+}
+
+.icon{
+  transition: 250ms ease;
+
+  
+}
+
+.d-none {
+  opacity: 0;
 }
 
 #skills{
@@ -86,40 +97,28 @@ h1{
  
 }
 
-#portfolio{
-    height: 100vh;
-}
-
-.carousel-item-img{
-    width: 65%;
-    transition: 500ms;
-  
-}
-
 .social-img{
 width: 50px;
 height: 50px;
 margin-right: 19px;
 }
 
-#social a{
-    text-decoration: none;
+.project > div > a:hover, .social-img:hover{
+    scale: 130%;
+    transition: 450ms;
 }
 
-@media (max-width: 770px){
-    #portfolio{
-        height: 60vh;
-    }
-  
+.projectImg{
+   width: 100%;
 }
+
+
+
 @media (max-width: 400px){
    body{
-    width: 100vw;
+    width: 420px;
    }
 
-    #portfolio{
-        height: 40vh;
-    }
     #felipe-img{
         height: 350px;
         width: 350px;

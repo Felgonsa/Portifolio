@@ -1,36 +1,36 @@
-const target = document.querySelectorAll('[data-anime]')
+var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
-const animationClass = "animate"
+const target = document.querySelectorAll("[data-anime]");
+
+const animationClass = "animate";
 
 
 function anime() {
-   
-// CÓDIGO BENZIDO, FAVOR NÃO MEXER
+    // CÓDIGO BENZIDO, FAVOR NÃO MEXER
     if (body.style.width > 400) {
-        var windowTop = window.pageYOffset + window.innerHeight - 800
-
+        var windowTop = window.pageYOffset + window.innerHeight - 800;
     } else if (body.style.width <= 400) {
-        var windowTop = window.pageYOffset + window.innerHeight - 50
+        var windowTop = window.pageYOffset + window.innerHeight - 50;
     }
 
     target.forEach(function (element) {
         if (window.pageYOffset > 100) {
-            if ((windowTop) > element.offsetTop) {
-                element.classList.add(animationClass)
-
+            if (windowTop > element.offsetTop) {
+                element.classList.add(animationClass);
             } else {
-                element.classList.remove(animationClass)
-
+                element.classList.remove(animationClass);
             }
-
-        } else if(window.pageYOffset + window.innerHeight -50  < 1568   ) {
-            element.classList.add(animationClass)
-
+        } else if (window.pageYOffset + window.innerHeight - 50 < 1568) {
+            element.classList.add(animationClass);
         }
-
-    })
+    });
 }
 
-window.addEventListener('scroll', function () {
-    anime()
-})
+window.addEventListener("scroll", function () {
+    anime();
+});

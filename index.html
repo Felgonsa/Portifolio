@@ -1,239 +1,432 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felipe Gonçalves</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Felipe Gonçalves</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="./style/keyframes-scroll.css">
-  <link rel="stylesheet" href="./style/style.css">
-</head>
-
-<body id="body" class="text-light bg-dark ">
-
-  <!-- COMEÇO NAVBAR  -->
-  <nav id="fixed" class="navbar navbar-expand-lg  navbar-dark bg-dark  d-flex justify-content-start "
-    style="position: sticky; top: 0; z-index:1 ">
-
-    <div class="navbar-brand mx-4">FG</div>
-
-    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
-      <span class="navbar-toggler-icon "></span>
-    </button>
-
-    <div id="myNav" class="collapse navbar-collapse">
-
-      <ul class="navbar-nav ">
-        <li class="nav-item"><a class="nav-link " href="#presentation">Quem sou? </a></li>
-        <li class="nav-item"><a class="nav-link " href="#skills">Habilidades </a></li>
-        <li class="nav-item"><a class="nav-link " href="#learning">Aprendendo </a></li>
-        <li class="nav-item"><a class="nav-link " href="#port">Portifólio </a></li>
-
-      </ul>
-    </div>
-
-    <button id="filter" class="btn btn-sm border text-light mx-4" onclick="color()">Filter</button>
-  </nav>
-  <!-- FINAL NAVBAR  -->
-
-  <!-- COMEÇO PAGINA INICIAL  -->
-  <div class=" ">
-    <h1 id="name" class="text-light d-flex justify-content-center align-items-center">
-      Felipe Gonçalves
-    </h1>
-
-    <a href="#felipe-img">
-      <h1 class="text-light d-flex justify-content-center align-items-center ">
-        <img id="arrow" class="rounded-circle p-2" src="./style/images/arrow.png" alt="" />
-      </h1>
-    </a>
-  </div>
-
-  <!-- FINAL PAGINA INICIAL  -->
-
-  <!-- COMEÇO APRESENTAÇÃO  -->
-
-  <div id="presentation" class="d-flex flex-column justify-content-center align-items-center ">
-
-    <img id="felipe-img" src="./style/images/felipe.jpeg" alt="" data-anime="top" />
-
-    <p class="description mt-3" style="text-align: center" data-anime="left">
-      Me chamo Felipe Gonçalves De Souza, tenho 17 anos e me encantei pela programação após começar um curso
-      de desenvolvimento web em 2022. Desde o começo desse ano estudo dia a dia e procuro evoluir
-      como estudante para um dia ser um profissional de excelência.
-    </p>
-
-    <p class="description" style="text-align: center" data-anime="right">
-      Curso análise e desenvolvimento de sistemas na Universidade Católica Dom Bosco(ucdb) com previsão de término para 12/2026 e
-          procuro uma vaga de estágio na área, com o objetivo de poder estudar mais e aprender na prática o mercado
-    </p>
-  </div>
-
-  <div id="social" class=" d-flex justify-content-center mt-4" data-anime="bottom">
-
-    <a href="https://www.instagram.com/felipe_goncaa/"> <img class="social-img"
-        src="https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2019/03/logo-instagram-png-fundo-transparente2.png?resize=696%2C696&ssl=1"
-        alt="">
-    </a>
-
-    <a href="https://www.linkedin.com/in/felipe-gon%C3%A7alves-de-souza-a6a394233/"> <img class="social-img"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
-    </a>
-
-    <a href="https://github.com/Felgonsa"> <img class="social-img"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-    </a>
-
-    <a href="mailto:lipesouzago4@gmail.com"> <img class="social-img"
-        src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Gmail_2020.png" alt="">
-    </a>
-
-  </div>
-  <!-- FINAL APRESENTAÇÃO  -->
-
-  <!-- COMEÇO CONHECIMENTO  -->
-
-  <div id="skills" class="d-flex justify-content-center align-items-center">
-    <div id="progress-bar" class="">
-      <h2 class="mt-4 mb-5 text-center" data-anime="top">Habilidades</h2>
-
-      <div id="progress-html" class="mb-5" data-anime="left">
-        <h4 class="mt-2">HTML</h4>
-        <div class="progress">
-          <div class="progress-bar " style="width: 95% ;background-color:#e44d28"></div>
-        </div>
-      </div>
-
-      <div id="progress-css" class="mb-5" data-anime="left">
-        <h4 class="mt-2">CSS</h4>
-        <div class="progress">
-          <div class="progress-bar " style="width: 90%; background-color: #264ee4;"></div>
-        </div>
-      </div>
-
-      <div id="progress-js" class="mb-5" data-anime="left">
-        <h4 class="mt-2">Javascript</h4>
-        <div class="progress">
-          <div class="progress-bar " style="width: 80%; background-color: #f7e018;"></div>
-        </div>
-      </div>
-
-      <div id="progress-node" class="mb-5" data-anime="left">
-        <h4 class="mt-2">NodeJs</h4>
-        <div class="progress">
-          <div class="progress-bar " style="width: 65%; background-color: #00c235;"></div>
-        </div>
-      </div>
-
-      <div id="progress-bs" class="mb-5" data-anime="left">
-        <h4 class="mt-2">Bootstrap</h4>
-        <div class="progress">
-          <div class="progress-bar" style="width: 90%; background-color: #8212f2;"></div>
-        </div>
-      </div>
-
-      <div id="" class="mb-1 progress-jq" data-anime="left">
-        <h4 class="">Jquery</h4>
-        <div class="progress">
-          <div class="progress-bar" style="width: 50%; background-color: #1269ad;"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!-- FINAL CONHECIMENTO  -->
-
-  <!-- COMEÇO ESTUDOS -->
-  <div id="learning" class=" mb-5 d-flex-row justify-content-center align-items-center">
-
-
-    <div id="" class="">
-      <h2 class="mt-3 mb-5 text-center" data-anime="top">Aprendendo</h2>
-    </div>
-
-    <div class="tecs-images d-flex justify-content-center " data-anime="right">
-
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
-    </div>
-  </div>
-  <!-- FINAL ESTUDOS  -->
-
-
-  <!-- COMEÇO PROJETOS -->
-  <div id="portfolio" class=" ">
-    <h2 id="port" class="mt-5 text-center" data-anime="top">Portifólio</h2>
-    <h5 id="" class=" text-center text-secondary" data-anime="top">Para conhecer basta clicar</h5>
-    
-
-    <div id="meuCarrosel" class="carousel slide mt-3" data-bs-ride="true" data-anime="bottom">
-
-      <div class="carousel-indicators">
-        <button data-bs-target="#meuCarrosel" data-bs-slide-to="0" class="active"></button>
-        <button data-bs-target="#meuCarrosel" data-bs-slide-to="1" class=""></button>
-        <button data-bs-target="#meuCarrosel" data-bs-slide-to="2" class=""></button>
-        <button data-bs-target="#meuCarrosel" data-bs-slide-to="3" class=""></button>
-        <button data-bs-target="#meuCarrosel" data-bs-slide-to="4" class=""></button>
-
-      </div>
-
-      <div class="carousel-inner text-center ">
-
-        <div class="carousel-item active ">
-          <a href="https://felgonsa.github.io/Memory-Game/"><img class="carousel-item-img "
-              src="./style/images/Memorygame.jpeg" alt=""></a>
-        </div>
-
-        <div class="carousel-item ">
-          <a href="https://felgonsa.github.io/Bloco-de-notas/"><img class="carousel-item-img"
-              src="./style/images/Blocodenotas.jpeg" alt=""></a>
-        </div>
-
-        <div class="carousel-item ">
-          <a href="https://felgonsa.github.io/Cronometro/"><img class="carousel-item-img"
-              src="./style/images/Stopwatch.jpeg" alt=""></a>
-        </div>
-
-        <div class="carousel-item ">
-          <a href="https://felgonsa.github.io/Jogo-da-velha/"><img class="carousel-item-img"
-              src="./style/images/Jogodavelha.jpeg" alt=""></a>
-        </div>
-        <div class="carousel-item ">
-          <a href="https://github.com/Felgonsa/Mural-de-avisos"><img class="carousel-item-img"
-              src="./style/images/mural.png" alt=""></a>
-        </div>
-
-      </div>
-
-      <a class="carousel-control-prev " href="#meuCarrosel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark rounded"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#meuCarrosel" data-bs-slide="next">
-        <span class="carousel-control-next-icon bg-dark rounded"></span>
-      </a>
-    </div>
-
-
-
-    <!-- FINAL PROJETOS  -->
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
-      
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FONT -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/4a77b40300.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style/keyframes-scroll.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body id="body" class="text-light bg-dark">
+    <!-- COMEÇO NAVBAR  -->
+    <nav
+      id="fixed"
+      class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-start"
+      style="position: sticky; top: 0; z-index: 1"
+    >
+      <div class="navbar-brand mx-4"> FG</div> 
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#myNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="myNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#presentation">Quem sou? </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Habilidades </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#learning">Aprendendo </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projetos </a>
+          </li>
+        </ul>
+      </div>
+
+      <button
+        id="filter"
+        class="btn btn-sm border text-light mx-4"
+        onclick="color()"
+      >
+        <div id="moon" class="icon">
+          <i class="fa-regular fa-moon fs-4"></i>
+        </div>
+        <div id="sun" class="d-none icon"><i class="fas fa-sun fs-4"></i></div>
+      </button>
+    </nav>
+    <!-- FINAL NAVBAR  -->
+
+    <!-- COMEÇO PAGINA INICIAL  -->
+    <div class=" ">
+      <h1
+        id="name"
+        class="text-light d-flex justify-content-center align-items-center"
+      >
+        Felipe Gonçalves
+      </h1>
+
+      <a href="#felipe-img">
+        <h1 class="text-light d-flex justify-content-center align-items-center">
+          <img
+            id="arrow"
+            class="rounded-circle p-2"
+            src="./style/images/arrow.png"
+            alt=""
+          />
+        </h1>
+      </a>
+    </div>
+
+    <!-- FINAL PAGINA INICIAL  -->
+
+    <!-- COMEÇO APRESENTAÇÃO  -->
+
+    <div
+      id="presentation"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <img
+        id="felipe-img"
+        src="./style/images/felipe.jpeg"
+        alt=""
+        data-anime="top"
+      />
+
+      <p class="description mt-3" style="text-align: center" data-anime="left">
+        Me chamo Felipe Gonçalves De Souza, tenho 17 anos e me encantei pela
+        programação após começar um curso de desenvolvimento web em 2022. Desde
+        o começo desse ano estudo dia a dia e procuro evoluir como estudante
+        para um dia ser um profissional de excelência.
+      </p>
+
+      <p class="description" style="text-align: center" data-anime="right">
+        Curso análise e desenvolvimento de sistemas na Universidade Católica Dom
+        Bosco(ucdb) com previsão de término para 12/2026 e procuro uma vaga de
+        estágio na área, com o objetivo de poder estudar mais e aprender na
+        prática o mercado
+      </p>
+    </div>
+
+    <div
+      id="social"
+      class="d-flex justify-content-center mt-4"
+      data-anime="bottom"
+    >
+      <a
+        href="https://www.instagram.com/felipe_goncaa/"
+        class="link-light"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="Instagram: Felipe_goncaa"
+        target="_blank"
+      >
+        <i class="social-img fa-brands fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/felipe-gon%C3%A7alves-de-souza-a6a394233/"
+        class="link-light"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="Linkedin: Felipe Gonçalves De Souza"
+        target="_blank"
+      >
+        <i class="social-img fa-brands fa-linkedin" target="_blank"></i>
+      </a>
+
+      <a
+        href="https://github.com/Felgonsa"
+        class="link-light"
+        class="link-light"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="GitHub: Felgonsa"
+        target="_blank"
+      >
+        <i class="social-img fa-brands fa-github"></i>
+      </a>
+
+      <a
+        href="mailto:lipesouzago4@gmail.com"
+        class="link-light"
+        class="link-light"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="Email: lipesouzago4@gmail.com"
+        target="_blank"
+      >
+        <i class="social-img fa-solid fa-envelope"></i>
+      </a>
+    </div>
+    <!-- FINAL APRESENTAÇÃO  -->
+
+    <!-- COMEÇO CONHECIMENTO  -->
+
+    <div id="skills" class="d-flex justify-content-center align-items-center">
+      <div id="progress-bar" class="">
+        <h2 class="mt-4 mb-5 text-center" data-anime="top">Habilidades</h2>
+
+        <div id="progress-html" class="mb-5" data-anime="left">
+          <h4 class="mt-2">HTML</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              style="width: 95%; background-color: #e44d28"
+            ></div>
+          </div>
+        </div>
+
+        <div id="progress-css" class="mb-5" data-anime="left">
+          <h4 class="mt-2">CSS</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              style="width: 90%; background-color: #264ee4"
+            ></div>
+          </div>
+        </div>
+
+        <div id="progress-js" class="mb-5" data-anime="left">
+          <h4 class="mt-2">Javascript</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              style="width: 80%; background-color: #f7e018"
+            ></div>
+          </div>
+        </div>
+
+        <div id="progress-node" class="mb-5" data-anime="left">
+          <h4 class="mt-2">NodeJs</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              style="width: 65%; background-color: #00c235"
+            ></div>
+          </div>
+        </div>
+
+        <div id="progress-bs" class="mb-5" data-anime="left">
+          <h4 class="mt-2">Bootstrap</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              style="width: 90%; background-color: #8212f2"
+            ></div>
+          </div>
+        </div>
+
+        <div id="" class="mb-1 progress-jq" data-anime="left">
+          <h4 class="">Jquery</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              style="width: 50%; background-color: #1269ad"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FINAL CONHECIMENTO  -->
+
+    <!-- COMEÇO ESTUDOS -->
+    <div
+      id="learning"
+      class="mb-5 d-flex-row justify-content-center align-items-center"
+    >
+      <div id="" class="">
+        <h2 class="mt-3 mb-5 text-center" data-anime="top">Aprendendo</h2>
+      </div>
+
+      <div class="tecs-images d-flex justify-content-center" data-anime="right">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+        />
+
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+        />
+
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+        />
+      </div>
+    </div>
+    <!-- FINAL ESTUDOS  -->
+
+    <div class="projects container my-5">
+      <h2 class="mt-4 mb-5 text-center" data-anime="top">Projetos</h2>
+
+      <div class="row justify-content-around">
+        <div class="col-md-5" data-anime="left">
+          <div class="project">
+            <h3 class="mt-5">Bloco de notas</h3>
+            <img
+              class="projectImg rounded"
+              src="./style/images/Blocodenotas.jpeg"
+              alt=""
+            />
+
+            <div class="icons d-flex justify-content-center fs-4 c">
+              <a
+                href="https://felgonsa.github.io/Bloco-de-notas/"
+                class="m-2 link-light"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Site"
+                target="_blank"
+                ><i class="fa fa-eye"></i
+              ></a>
+              <a
+                href="https://github.com/Felgonsa/Bloco-de-notas"
+                class="m-2 link-light"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Código"
+                target="_blank"
+                ><i class="fa fa-code"></i
+              ></a>
+            </div>
+
+            <div class="text-center m-2">
+              O bloco de notas foi o primeiro projeto dinâmico com adição e
+              remoção de objetos e o uso de local storage, pretendo adicionar a
+              função de editar uma tarefa já adicionada.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5" data-anime="top">
+          <div class="project">
+            <h3 class="mt-5">Jogo da memória</h3>
+            <img
+              class="projectImg rounded"
+              src="./style/images/Memorygame.jpeg"
+              alt=""
+            />
+
+            <div class="icons d-flex justify-content-center fs-4 c">
+              <a
+                href="https://felgonsa.github.io/Memory-Game/"
+                class="m-2 link-light"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Site"
+                target="_blank"
+                ><i class="fa fa-eye"></i
+              ></a>
+              <a
+                href="https://github.com/Felgonsa/Memory-Game"
+                class="m-2 link-light"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Código"
+                target="_blank"
+                ><i class="fa fa-code"></i
+              ></a>
+            </div>
+
+            <div class="text-center m-2">
+              Esse é um projeto que tenho muito orgulho, ele é inteiramente
+              baseado em classes, onde posso alteralas em um arquivo sem que o
+              jogo pare de funcionar.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5" data-anime="left">
+          <div class="project">
+            <h3 class="mt-5">Mural de avisos</h3>
+            <img
+              class="projectImg rounded"
+              src="./style/images/mural.png"
+              alt=""
+            />
+
+            <div class="icons d-flex justify-content-center fs-4 c">
+              <a
+                href="https://github.com/Felgonsa/Mural-de-avisos"
+                class="m-2 link-light"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Código"
+                target="_blank"
+                ><i class="fa fa-code"></i
+              ></a>
+            </div>
+
+            <div class="text-center m-2">
+              O Mural de avisos é um projeto full stack com foco no back-end, é
+              o que eu mais me orgulho de ter feito, mesmo que não tenha sido
+              sozinho. Estou incrementando a função de login e senha com um
+              banco de dados "improvisado".
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5" data-anime="right">
+          <div class="project">
+            <h3 class="mt-5">Jogo da Velha</h3>
+            <img
+              class="projectImg rounded"
+              src="./style/images/Jogodavelha.jpeg"
+              alt=""
+            />
+
+            <div class="icons d-flex justify-content-center fs-4 c">
+              <a
+                href="https://felgonsa.github.io/Jogo-da-velha/"
+                class="m-2 link-light"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Site"
+                target="_blank"
+              >
+                <i class="fa fa-eye"></i
+              ></a>
+              <a
+                href="https://github.com/Felgonsa/Jogo-da-velha"
+                class="m-2 link-light"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Código"
+                target="_blank"
+                ><i class="fa fa-code"></i
+              ></a>
+            </div>
+
+            <div class="text-center m-2">
+              Um projeto simples que me ensinou muita coisa, foi o primeiro de tamanho mais complexo onde se aplicava regras.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./scripts/filter.js"></script>
     <script src="./scripts/scroll.js"></script>
-</body>
-
+  </body>
 </html>
